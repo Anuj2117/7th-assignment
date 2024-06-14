@@ -1,42 +1,69 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+  text-align: center;}
+.groceryContainer{
+  /* border: 1px solid red ; */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  padding: 1rem;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+form{
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  padding: 1rem;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+form h1{
+  text-shadow: 0 6px 5px rgba(0, 0, 0, 0.4);
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input ,button{
+  height: 30px;
+  margin: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+form input{
+  padding: .5rem;
 }
-
-.card {
-  padding: 2em;
+form button{
+  color: #fff;
+  border: transparent;
+  padding: .5rem;
+  border-radius: 5px;
+  background-color: dodgerblue;
 }
-
-.read-the-docs {
-  color: #888;
+.groceryList li{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding: .2rem;
+}
+.groceryList button{
+  height: 25px;
+  background-color: red;
+  color: #fff;
+  border: transparent;
+  padding: .2rem;
+  border-radius: 5px;
+}
+.listname{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: black;
 }
